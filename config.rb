@@ -5,11 +5,11 @@ require 'compass/import-once/activate'
 http_path = "/"
 css_dir = "css"
 sass_dir = "sass"
-images_dir = "images"
+images_dir = "img"
 javascripts_dir = "scripts"
 fonts_dir = "fonts"
 
-output_style = :nested
+output_style = :compressed
 
 relative_assets = true
 

@@ -1,4 +1,11 @@
-_site/
+# No files related to compiling Sass
 .sass-cache/
-.codekit
+
+# No files related to CodeKit
+*.codekit
+
+# No sneaky OS X Finder files
 .DS_Store
+
+# No temporary files
+*~
