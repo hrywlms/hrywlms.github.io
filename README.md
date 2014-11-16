@@ -1,2 +1,2 @@
 # Personal Site
-Testing out GitHub Pages functionality before pushing full changes and site design
+This is my personal site purposefully created for editing, tweaking, breaking shit, and eventually fixing it! Thank you to those creating and working on the amazing tools ([Bower](http://bower.io/), [Sass](http://sass-lang.com/), etc...) people like myself get to build things with every day.
