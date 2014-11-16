@@ -1,0 +1,11 @@
+# humanstxt.org
+
+# Designer
+  Name: Harry Williams
+  Location: Shropshire, UK
+  Email: hi@hrywlms.co.uk
+  Twitter: hrywlms
+
+# Site
+  Components: Sass, Compass, Bower, html5shiv
+  Software: Photoshop, CodeKit, Sublime Text, iTerm
