@@ -1,0 +1,11 @@
+// This file uses .scss because it is just easier
+// to declare @font-face families with regular CSS
+
+// Declare lovely custom font(s)
+@font-face {
+    font-family: 'Brandon Grotesque Black';
+    src: url('../fonts/brandon_grotesque_black.woff') format('woff'),
+         url('../fonts/brandon_grotesque_black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
