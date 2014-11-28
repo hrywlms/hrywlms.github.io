@@ -30,10 +30,28 @@ a
 	&:hover
 		text-decoration: underline
 
+small
+	font-size: 12px
+
 hr
 	border: 0
 	background: lighten($lightGrey, 40%)
 
+textarea, pre, kbd, samp, var, tt
+	font-family: Consolas, monaco, monospace
+	font-size: 12px
+	padding: 1px 18px
+	margin: 0 0 1.5em
+	border-width: 1px 1px 1px 5px
+	border-style: solid
+	border-color: lighten($lightGrey, 40%)
+	border-image: none
+	border-radius: 4px
+	background: none repeat scroll 0% 0% lighten($lightGrey, 43%)
+	white-space: pre
+	overflow-x: auto
+
+// Header, section, footer
 header
 	width: 270px
 	float: left
@@ -43,9 +61,6 @@ section
 	width: 500px
 	float: right
 	padding-bottom: 50px
-
-small
-	font-size: 12px
 
 footer
 	width: 270px
