@@ -9,3 +9,6 @@
 
 # No temporary files
 *~
+
+# No custom fonts, yet
+fonts/**/*
