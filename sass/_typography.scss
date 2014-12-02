@@ -1,0 +1,54 @@
+// .scss syntax for clarity with @font-face
+// Not everything typography related, just blocks
+// that can be separated from the main stylehseet
+
+// Declare lovely custom font(s)
+// @font-face {
+//     font-family: 'Brandon Grotesque Black';
+//     src: url('../fonts/brandon_grotesque_black.woff') format('woff'),
+//          url('../fonts/brandon_grotesque_black.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// Text selection, because why not?
+::selection {
+	background-color: $lightGreen;
+	color: $darkGrey;
+	text-shadow: none;
+}
+
+// Anchor links
+a {
+	color: $darkGreen;
+	font-weight: 300;
+	text-decoration: none;
+	&::selection {
+		background-color: $lightGrey;
+		color: $lightGreen;
+	}
+	&::-moz-selection {
+		background-color: $lightGrey;
+		color: $lightGreen;
+	}
+	&:hover {
+		border-bottom: 2px solid $lightGrey;
+		color: $lightGrey;
+	}
+}
+
+// Preformatted text and code samples
+textarea, pre, kbd, samp, var, tt {
+	font-family: Consolas, monaco, monospace;
+	font-size: 12px;
+	padding: 1px 18px;
+	margin: 0 0 1.5em;
+	border-width: 1px 1px 1px 5px;
+	border-style: solid;
+	border-color: lighten($lightGrey, 40%);
+	border-image: none;
+	border-radius: 4px;
+	background: none repeat scroll 0% 0% lighten($lightGrey, 43%);
+	white-space: pre;
+	overflow-x: auto;
+}
