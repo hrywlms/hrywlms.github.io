@@ -2,7 +2,7 @@
 .sass-cache/
 
 # No files related to CodeKit
-*.codekit
+# *.codekit
 
 # No sneaky OS X Finder files
 .DS_Store
