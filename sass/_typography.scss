@@ -20,9 +20,11 @@
 
 // Anchor links
 a {
-	color: $darkGreen;
+	color: inherit;
 	font-weight: 300;
 	text-decoration: none;
+	border-bottom: 2px solid lighten($lightGrey, 20%);
+	transition: all 0.2s cubic-bezier(0.165, 0.63, 0.14, 0.82);
 	&::selection {
 		background-color: $lightGrey;
 		color: $lightGreen;
@@ -32,15 +34,14 @@ a {
 		color: $lightGreen;
 	}
 	&:hover {
-		border-bottom: 2px solid $lightGrey;
-		color: $lightGrey;
+		border-bottom: 2px solid $lightGreen;
 	}
 }
 
 // Preformatted text and code samples
 textarea, pre, kbd, samp, var, tt {
 	font-family: Consolas, monaco, monospace;
-	font-size: 12px;
+	font-size: 0.75em;
 	padding: 1px 18px;
 	margin: 0 0 1.5em;
 	border-width: 1px 1px 1px 5px;
@@ -51,4 +52,7 @@ textarea, pre, kbd, samp, var, tt {
 	background: none repeat scroll 0% 0% lighten($lightGrey, 43%);
 	white-space: pre;
 	overflow-x: auto;
+	.highlighted {
+		color: $darkGreen;
+	}
 }

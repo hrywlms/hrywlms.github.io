@@ -2,15 +2,17 @@
 @import colours
 @import typography
 
+
+
 // Main styles
 *
 	box-sizing: border-box
 
 html
-	border-top: 6px solid $darkGrey
+	border-top: 12px solid $darkGrey
 
 body
-	padding: 50px
+	padding: 3.1em
 	font: 300 16px/1.625 "Helvetica Neue", Helvetica, Arial, sans-serif
 	color: $lightGrey
 
@@ -21,18 +23,21 @@ body
 h1, h2, h3
 	color: $darkGrey
 	line-height: 1.1
-	+ p, pre
-		margin: 0 0 20px
+
+h1, h2, h3, p, pre
+	margin: 0 0 20px
 
 h1
-	font-size: 28px
+	font-size: 1.75em
 
 small
-	font-size: 12px
+	font-size: 0.75em
 
 hr
 	border: 0
-	background: lighten($lightGrey, 40%)
+	background-color: lighten($lightGrey, 40%)
+
+
 
 // Header, section, footer
 header
@@ -45,15 +50,17 @@ section
 	float: right
 	padding-bottom: 50px
 	.codeblock
-		transition: all 0.25s ease
+		transition: all 0.2s cubic-bezier(0.165, 0.63, 0.14, 0.82)
 		&:hover
-			background: lighten($lightGrey, 38%)
+			background-color: lighten($lightGrey, 38%)
 
 footer
 	position: fixed
 	width: 280px
 	float: left
 	bottom: 50px
+
+
 
 // Media queries
 @media print, screen and (max-width: 960px)
@@ -82,6 +89,8 @@ footer
 		font-size: 12pt
 		color: #444
 
+
+
 // Animations
 @keyframes fadeInDown
 	0%
@@ -104,3 +113,17 @@ footer
 
 footer
 	animation: fadeInLeft 1s ease 0.5s
+
+
+// *
+// 	background-color: rgba(255, 0, 0, 0.2)
+// * *
+// 	background-color: rgba(0, 255, 0, 0.2)
+// * * *
+// 	background-color: rgba(0, 0, 255, 0.2)
+// * * * *
+// 	background-color: rgba(255, 0, 255, 0.2)
+// * * * * *
+// 	background-color: rgba(0, 255, 255, 0.2)
+// * * * * * *
+// 	background-color: rgba(255, 255, 0, 0.2)
