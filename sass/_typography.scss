@@ -11,6 +11,13 @@
 //     font-style: normal;
 // }
 
+
+
+// Extra variables
+$transition: all 0.2s cubic-bezier(0.165, 0.63, 0.14, 0.82);
+
+
+
 // Text selection, because why not?
 ::selection {
 	background-color: $lightGreen;
@@ -18,13 +25,15 @@
 	text-shadow: none;
 }
 
+
+
 // Anchor links
 a {
 	color: inherit;
 	font-weight: 300;
 	text-decoration: none;
 	border-bottom: 2px solid lighten($lightGrey, 20%);
-	transition: all 0.2s cubic-bezier(0.165, 0.63, 0.14, 0.82);
+	transition: $transition;
 	&::selection {
 		background-color: $lightGrey;
 		color: $lightGreen;
@@ -37,6 +46,8 @@ a {
 		border-bottom: 2px solid $lightGreen;
 	}
 }
+
+
 
 // Preformatted text and code samples
 textarea, pre, kbd, samp, var, tt {
