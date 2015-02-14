@@ -1,6 +1,6 @@
 # humanstxt.org
 
-# Designer
+# Me
   Name: Harry Williams
   Location: Shropshire, UK
   Email: hi@hrywlms.co.uk
